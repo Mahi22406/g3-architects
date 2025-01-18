@@ -12,6 +12,7 @@
 /* header styles */
 .heading{
     background-color: rgba(255, 144, 14, 0.1);
+    margin: 0 auto;
     
 }
 /* navbar reltated styles */
@@ -43,6 +44,9 @@
     margin: 0 auto;
 }
 /* banner styles */
+.banner{
+    margin-bottom:85px;
+}
 .banner-title{
     font-size: 4rem;
     font-weight: 700;
@@ -62,6 +66,8 @@
     margin-top: 10px;
     margin-bottom: 30px;
 }
+
+
 .banner-info{
     max-width:850px;
     margin: 0 auto;
@@ -69,10 +75,111 @@
 }
 .banner-img{
     width: 100%;
+    
 }
+
+/* team and feature related styles */
+.team{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    
+}
+.teams-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+   
+    
+}
+ .feature{
+    margin-left: 130px;
+    max-width: 530px;
+    font-size: 2.8rem; 
+} 
+.quick{
+    color:#727272 ;
+    font-weight: 500;
+}
+.Our{
+    font-weight: bold;
+    color: #131313;
+}
+.Features{
+    font-weight: bold;
+    color: #FF900E;
+}
+.feature-description{
+    font-size: 1rem;
+    color: #727272;
+    margin-bottom: 32px;
+}
+/* Fact section */
+.award{
+    width: 50px;
+    border: 1px solid #FF900E ;
+    padding: 45px 36px 60px 35px;
+    justify-content: center;
+    align-items: center;
+}
+.fact-card{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    display: flex;
+     justify-content: center;
+     align-items: center; 
+     text-align: center;
+    
+}
+.fact-number{
+     font-size: 2.8rem;
+     font-weight: 600;
+     color: #424242; 
+     margin-top: 10px;
+     margin-bottom: 5px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color:#727272 ;
+}
+.fact-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:124px ;
+}
+.fact-description{
+    max-width: 542px;
+    font-weight: 400;
+    font-size: 1rem;
+    color:#727272;
+}
+
 /* reponsive media query */
 @media screen and (max-width:576px) {
-    .navbae, .navlinks{
+    .navbar, .navlinks, .team{
         flex-direction: column;
     }
+    .teams-img{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .feature{
+    margin-left: 20px;
+    }
+    
+}
+
+/* Medium device */
+@media screen and (min-width:576px) and (max-width:992px){
+    .team{
+        flex-direction: column;
+    }
+    .feature{
+        margin-left: 50px auto;
+    }
+    
 }
