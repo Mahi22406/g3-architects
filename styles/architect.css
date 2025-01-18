@@ -178,6 +178,35 @@ text-align: center;
     grid-template-columns: repeat(5, 1fr);
     filter: grayscale(100%);
 }
+.features-enjoy{
+    display: flex;
+    gap: 146px;
+    /* max-width: 586px; */
+}
+.first-part{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color:#131313 ;
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+.features-enjoy-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+}
+.dekxtop{
+    font-size: 1.25rem;
+    font-weight: 600px;
+    color:#131313;
+}
+.feature-box{
+    padding: 45px;
+    box-shadow: 0 4px 30px 0px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
 
 /* reponsive media query */
 @media screen and (max-width:576px) {
