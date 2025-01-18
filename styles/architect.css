@@ -9,6 +9,70 @@
   font-weight: 400px;
   font-style: normal;
 }
-ul li{
+/* header styles */
+.heading{
+    background-color: rgba(255, 144, 14, 0.1);
+    
+}
+/* navbar reltated styles */
+.brand{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+}
+.navlinks{
+    display: flex;
+}
+.nav-item{
+   list-style: none;
+   margin-right: 30px;
+}
+.nav-link{
     text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner styles */
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-content{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn-1{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color:#FFFFFF;
+    background-color: #FF900E;
+    border-radius: 8px;
+    border: none;
+    padding: 20px 25px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.banner-info{
+    max-width:850px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-img{
+    width: 100%;
+}
+/* reponsive media query */
+@media screen and (max-width:576px) {
+    .navbae, .navlinks{
+        flex-direction: column;
+    }
 }
